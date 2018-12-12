@@ -7,6 +7,7 @@ package tedtoposeru;
 
 import java.util.Scanner;
 import java.util.Random;
+
 /**
  *
  * @author Václav
@@ -58,7 +59,7 @@ public class Tedtoposeru {
             }
         }
         int random = generace.nextInt(2);
-        if (random == 0){
+        if (random == 0) {
             System.out.println();
             System.out.println("You were hunting in a forest with your companions");
             System.out.println("then you heard some shouting and your group splited up");
@@ -70,16 +71,14 @@ public class Tedtoposeru {
             System.out.println("What will you do ?");
             System.out.println("run away / fight");
             String reaction = sc.nextLine();
-            
+
             if (reaction.equals("run away")) {
                 System.out.println("you tried to run away but they caught up with you and killed two of your soldiers");
                 System.out.println("it looks like you have no choice");
                 random = generace.nextInt(5);
-                
-                        
-            
+
+            }
         }
-        } 
     }
 
 }
