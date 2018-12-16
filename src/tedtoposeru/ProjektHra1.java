@@ -12,7 +12,7 @@ import java.util.Random;
  *
  * @author Václav
  */
-public class Tedtoposeru {
+public class ProjektHra1 {
 
     /**
      * @param args the command line arguments
