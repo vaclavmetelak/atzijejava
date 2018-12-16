@@ -22,8 +22,14 @@ public class Tedtoposeru {
         Scanner sc = new Scanner(System.in, "Windows-1250");
         Random generace = new Random();
         sc.nextLine();
+        
+        Clear();
+
         System.out.println("select your name");
         String name = sc.nextLine();
+
+        Clear();
+
         System.out.println("choose your side");
 
         while (true) {
@@ -66,6 +72,12 @@ public class Tedtoposeru {
                 random = generace.nextInt(5);
 
             }
+            Clear();
+        }
+    }
+    public static void Clear(){
+        for (int i = 0; i <= 50;i++){
+            System.out.println();
         }
     }
 
