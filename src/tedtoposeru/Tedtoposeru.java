@@ -35,6 +35,7 @@ public class Tedtoposeru {
         while (true) {
             System.out.println("Red Legion or Derion");
             String side = sc.nextLine();
+            Clear();
             if (side.equals("Red Legion") || side.equals("Derion")) {
                 System.out.println("For centuries, two empires ");
                 System.out.println("led a war one against the other, for so long,");
