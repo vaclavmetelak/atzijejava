@@ -25,28 +25,16 @@ public class Tedtoposeru {
         System.out.println("select your name");
         String name = sc.nextLine();
         System.out.println("choose your side");
-        System.out.println("Red Legion or Derion");
-        while (true) {
-            String side = sc.nextLine();
 
-            if (side.equals("Red Legion")) {
+        while (true) {
+            System.out.println("Red Legion or Derion");
+            String side = sc.nextLine();
+            if (side.equals("Red Legion") || side.equals("Derion")) {
                 System.out.println("For centuries, two empires ");
                 System.out.println("led a war one against the other, for so long,");
                 System.out.println("that nobody knew the cause, and you a legioner");
-                System.out.println("of the Red Legion have to find");
-                System.out.println("a peace between them, but");
-                System.out.println("because many people find");
-                System.out.println("this war like a");
-                System.out.println("golden mine, your finding may bring you more");
-                System.out.println("enemies on both sides, then the war itself.");
-                System.out.println("Good luck " + name);
-                break;
-            } else if (side.equals("Derion")) {
-                System.out.println("For centuries, two empires ");
-                System.out.println("led a war one against the other, for so long,");
-                System.out.println("that nobody knew the cause, and you a legioner");
-                System.out.println("of the Red Legion have to find");
-                System.out.println("a peace between them, but");
+                System.out.println("of the " + side + " have to find");
+                System.out.println("peace between them, but");
                 System.out.println("because many people find");
                 System.out.println("this war like a");
                 System.out.println("golden mine, your finding may bring you more");
@@ -54,9 +42,9 @@ public class Tedtoposeru {
                 System.out.println("Good luck " + name);
                 break;
             } else {
-                System.out.println("invalid faction");
-                continue;
+                System.out.println("Invalid faction");
             }
+
         }
         int random = generace.nextInt(2);
         if (random == 0) {
